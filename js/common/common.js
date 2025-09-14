@@ -28,9 +28,12 @@ $(document).ready(function () {
             // let indexWithoutNoDep = $(this).index();
             let gnbMenuId = $(this).attr("id");
             if (gnbMenuId === "gnbMenuGreeting") {
-                $(".header_bg").css("height", "108px");
+                $(".header_bg").css("height", "138px");
             } else if (gnbMenuId === "gnbMenuFmt") {
                 $(".header_bg").css("height", "612px");
+            }
+             else if (gnbMenuId === "gnbMenuNotice") {
+                $(".header_bg").css("height", "138px");
             }
             // else if (gnbMenuId === "gnbMenuWork") {
             //     $(".header_bg").css("height", "78px");

@@ -326,7 +326,7 @@ header {
 .depth {
     position: absolute;
     left: 50%;
-    top: 100%;
+    top: 120%;
     transform: translateX(-50%);
     opacity: 0;
     -webkit-transition: all 0.5s ease;

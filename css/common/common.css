@@ -151,6 +151,7 @@ footer {
     width: 100%;
     /* background: #ececec; */
     margin: 0 auto;
+    z-index: 1;
 }
 
 /* 서브메뉴 이동 버튼 */
@@ -219,7 +220,7 @@ footer {
     border: 1px solid #ddd;
     display: none; /* 기본은 숨김 */
     flex-direction: column;
-    z-index: 1000;
+    z-index: 5000;
 }
 
 .dropdown_menu li {
@@ -297,4 +298,44 @@ span.arrow {
 .side-menu-inner {
     width: 100%;
     margin-top: 100px;
+}
+/* 리스트 */
+table {
+  border-collapse: collapse; /* 셀 경계 겹침 제거 */
+  border-spacing: 0;        /* 셀 간격 초기화 */
+  width: 100%;              /* 부모 영역 가득 */
+  font-size: 16px;
+}
+
+th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;            /* 부모 글꼴 상속 */
+  vertical-align: middle;   /* 수직 가운데 정렬 */
+}
+.list{
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.list th{
+    background: #ececec;
+    border-right: 1px solid #ddd;
+    color: #3b3b3b;
+    font-weight: bold;
+}
+.list tr{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+.list tr:last-child{
+    border-bottom: none;
+}
+.list td{
+    border-right: 1px solid #ddd;
+    padding: 0 10px;
+
+}
+.list tr td:last-child{
+    border-right: none;
 }
