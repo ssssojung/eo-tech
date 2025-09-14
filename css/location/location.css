@@ -1,0 +1,11 @@
+@charset "utf-8";
+.sub_page_top {
+    background: url(../../image/sub_page_top.png) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}

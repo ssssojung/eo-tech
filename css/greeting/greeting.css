@@ -1,0 +1,67 @@
+@charset "utf-8";
+.sub_page_top {
+    background: url(../../image/sub_page_top.png) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.greeting_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.greeting_right {
+    width: 500px;
+}
+.greeting_right > img {
+    object-fit: contain;
+    width: 100%;
+}
+.greeting_text_area {
+    max-width: 600px;
+    padding: 25px 8px 0px 65px;
+    position: relative;
+}
+.greeting_text_area > .bottom {
+    word-break: keep-all;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(51, 51, 51, 0.7);
+    font-family: "Montserrat", "Pretendard", "Noto Sans KR", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+.double_quotes {
+    position: absolute;
+    background: url(../../image/double_quotes.png);
+    width: 50px;
+    height: 38px;
+}
+.double_quotes.text_top {
+    top: 0;
+    left: 0;
+}
+.double_quotes.text_bottom {
+    bottom: 0;
+    right: 0;
+    transform: rotate(-180deg);
+}
+.greeting_text_area .top{
+    margin-bottom: 30px;
+}
+.greeting_text_area .top p{
+        color: #124512;
+    font-size: 22px;
+}
+.greeting_text_area .top b{
+      color: #3b3b3b;
+      font-size: 40px;
+}
