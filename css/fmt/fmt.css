@@ -1,6 +1,6 @@
 @charset "utf-8";
 .sub_page_top {
-    background: url(../../image/sub_page_top.png) no-repeat center center;
+    background: url(../../image/sub_page2_top.png) no-repeat center center;
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -15,14 +15,14 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.fmt_sub_wrap{
+.fmt_sub_wrap {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.fmt_sub_wrap thead tr{
+.fmt_sub_wrap thead tr {
     height: 40px;
 }
 .img_box {
@@ -84,7 +84,63 @@
     color: #124512;
     font-weight: 500;
 }
-.fmt_wrap .title b {
+.fmt_sub_wrap .title {
+    border-bottom: 1px solid #3b3b3b;
+}
+.fmt_sub_wrap .title b {
     color: #3b3b3b;
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 90px;
+}
+.group_title {
+    /* color: #124512; */
+    color: #62832b;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+.info_group li::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    min-width: 5px;
+    min-height: 5px;
+    height: 5px;
+    background: #fff;
+    border: 1px solid #61832bbb;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.info_group li {
+    word-break: keep-all;
+    display: flex;
+    gap: 12px;
+    line-height: 25px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.7);
+    font-family: "Montserrat", "Pretendard", "Noto Sans KR", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+.info_group{
+    padding-top: 30px;
+}
+.group_row > .product_img{
+    width: 350px;
+    height: 350px;
+    min-width: 350px;
+    background: #ddd;
+}
+.group_row >  ul{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.group_row{
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
