@@ -66,6 +66,12 @@ body {
 main {
     width: 100%;
 }
+button{
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
 
 /* 버튼 */
 /* .btn {
@@ -102,6 +108,7 @@ footer {
 }
 .footer_text > li {
     margin-bottom: 8px;
+    font-size: 15px;
 }
 .footer_text .bar {
     width: 2px;
@@ -120,7 +127,7 @@ footer {
     opacity: 0.5;
     margin-right: 10px;
 }
-.footer_text .copy{
+.footer_text .copy {
     opacity: 0.5;
     font-size: 14px;
 }
@@ -196,7 +203,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 200px;
+    width: auto;
+    min-width: 200px;
     background: transparent;
     border: none;
     font-size: 18px;
@@ -204,6 +212,8 @@ footer {
 }
 .dropdown_btn span {
     font-weight: bold;
+        white-space: nowrap;
+        padding-right: 20px;
 }
 
 .dropdown_btn .arrow {
@@ -215,7 +225,8 @@ footer {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px;
+    width: auto;
+    min-width: 200px;
     background: #fff;
     border: 1px solid #ddd;
     display: none; /* 기본은 숨김 */
@@ -301,41 +312,43 @@ span.arrow {
 }
 /* 리스트 */
 table {
-  border-collapse: collapse; /* 셀 경계 겹침 제거 */
-  border-spacing: 0;        /* 셀 간격 초기화 */
-  width: 100%;              /* 부모 영역 가득 */
-  font-size: 16px;
+    border-collapse: collapse; /* 셀 경계 겹침 제거 */
+    border-spacing: 0; /* 셀 간격 초기화 */
+    width: 100%; /* 부모 영역 가득 */
+    font-size: 16px;
 }
 
-th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;            /* 부모 글꼴 상속 */
-  vertical-align: middle;   /* 수직 가운데 정렬 */
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit; /* 부모 글꼴 상속 */
+    vertical-align: middle; /* 수직 가운데 정렬 */
 }
-.list{
+.list {
     width: 100%;
     border: 1px solid #ddd;
+    background: white;
 }
-.list th{
+.list th {
     background: #ececec;
     border-right: 1px solid #ddd;
     color: #3b3b3b;
     font-weight: bold;
 }
-.list tr{
+.list tr {
     border-bottom: 1px solid #ddd;
     height: 50px;
 }
-.list tr:last-child{
+.list tr:last-child {
     border-bottom: none;
 }
-.list td{
+.list td {
     border-right: 1px solid #ddd;
     padding: 0 10px;
-
+    text-align: center;
 }
-.list tr td:last-child{
+.list tr td:last-child {
     border-right: none;
 }

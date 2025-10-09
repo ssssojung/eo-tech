@@ -127,16 +127,25 @@
     padding-top: 30px;
 }
 .group_row > .product_img{
-    width: 350px;
+    width: 475px;
     height: 350px;
-    min-width: 350px;
+    min-width: 475px;
     background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.group_row > .product_img > img{
+    width: 100%;
+    object-fit: cover;
 }
 .group_row >  ul{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 11px;
 }
 .group_row{
     display: flex;

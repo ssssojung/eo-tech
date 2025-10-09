@@ -31,16 +31,9 @@ $(document).ready(function () {
                 $(".header_bg").css("height", "138px");
             } else if (gnbMenuId === "gnbMenuFmt") {
                 $(".header_bg").css("height", "612px");
-            }
-             else if (gnbMenuId === "gnbMenuNotice") {
+            } else if (gnbMenuId === "gnbMenuNotice") {
                 $(".header_bg").css("height", "138px");
-            }
-            // else if (gnbMenuId === "gnbMenuWork") {
-            //     $(".header_bg").css("height", "78px");
-            // } else if (gnbMenuId === "gnbMenuStats") {
-            //     $(".header_bg").css("height", "108px");
-            // }
-            else {
+            } else {
                 $(".header_bg").css("height", "0");
             }
         })
@@ -53,7 +46,7 @@ $(document).ready(function () {
         .mouseleave(function () {
             setTimeout(function () {
                 $(".header_gnb").removeClass("gnb_on");
-                $(".gnb_inner > .gnb li").not(".gnb_searchBox").removeClass("gnb_on");
+                $(".gnb_inner > .gnb > li").not(".gnb_searchBox").removeClass("gnb_on");
             }, 100);
         });
 
@@ -93,21 +86,21 @@ $(document).ready(function () {
     });
 
     $(".dropdown_btn").on("click", function () {
-    let $parent = $(this).closest(".dropdown");
+        let $parent = $(this).closest(".dropdown");
 
-    // 이미 열려있으면 닫기
-    if ($parent.hasClass("open")) {
-      $parent.removeClass("open");
-    } else {
-      $(".dropdown").removeClass("open"); // 다른 드롭다운 닫기
-      $parent.addClass("open");
-    }
-  });
+        // 이미 열려있으면 닫기
+        if ($parent.hasClass("open")) {
+            $parent.removeClass("open");
+        } else {
+            $(".dropdown").removeClass("open"); // 다른 드롭다운 닫기
+            $parent.addClass("open");
+        }
+    });
 
-  // 바깥 클릭 시 닫기
-  $(document).on("click", function (e) {
-    if (!$(e.target).closest(".dropdown").length) {
-      $(".dropdown").removeClass("open");
-    }
-  });
+    // 바깥 클릭 시 닫기
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest(".dropdown").length) {
+            $(".dropdown").removeClass("open");
+        }
+    });
 });

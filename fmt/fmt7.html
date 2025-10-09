@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>이오기술</title>
+
+        <link rel="stylesheet" href="../css/common/common.css" />
+        <link rel="stylesheet" href="../css/common/header.css" />
+        <link rel="stylesheet" href="../css/fmt/fmt.css" />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="../js/common/common.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- <div class="header_top">
+                <h1>
+                    <a href="" class="goMain">사업관리시스템</a>
+                </h1>
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li class="logout"><a href="../login/login.html" title="로그아웃"></a></li>
+                </ul>
+            </div> -->
+
+            <div class="header_gnb">
+                <div class="header_bg" style="height: 0px"></div>
+                <div class="gnb_wrap">
+                    <div class="gnb_inner">
+                        <h1>
+                            <a href="../index.html" class="goMain">
+                                <img src="../image/ex_logo.jpg" alt="이오기술" />
+                            </a>
+                        </h1>
+                        <ul class="gnb">
+                            <li id="gnbMenuGreeting">
+                                <a href="../greeting/greeting.html" class="gnb_on"><i>회사소개</i></a>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <a href="../greeting/greeting.html"><i>인사말</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./location.html"><i>오시는 길</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="gnbMenuFmt">
+                                <a href="../fmt/fmt_list.html" class="gnb_on"><i>이오발효기</i></a>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <a href="./fmt1.html"><i>EO-1000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt2.html"><i>EO-1500</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt3.html"><i>EO-2000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt4.html"><i>EO-2600</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt5.html"><i>EO-3000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt6.html"><i>EO-5000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt7.html"><i>EO-6000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt8.html"><i>EO-9000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt9.html"><i>EO-13500</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt10.html"><i>EO-16000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt11.html"><i>EO-18000</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt12.html"><i>생균제생산플랜트</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt13.html"><i>발효사료생산플랜트</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="./fmt14.html"><i>TMF(자가사료)생산플랜트</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="gnbMenuCbt">
+                                <a href="../ctb/ctb.html" class="no-dep"><i>배양기/부속장치</i></a>
+                            </li>
+                            <li id="gnbMenuGreeting">
+                                <a href="#none" class="gnb_on"><i>고객센터</i></a>
+                                <div class="depth">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i>공지사항</i></a>
+                                        </li>
+                                        <li>
+                                            <a href="../gallery/gallery.html"><i>설치후기</i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="sub_page_top">
+                <div class="inner">
+                    <div class="text_area">
+                        <b>이오발효기</b>
+                        <p>PRODUCT</p>
+                    </div>
+                    <div class="select_sub_menu_area">
+                        <a href="../index.html" class="home_btn" title="메인으로">
+                            <span class="home"></span>
+                        </a>
+                        <span class="arrow"></span>
+                        <div class="dropdown" data-drop-event="click">
+                            <button class="dropdown_btn">
+                                <span>EO-6000</span>
+                                <span class="arrow"></span>
+                            </button>
+                            <ul class="dropdown_menu">
+                                <li><a href="./fmt_list.html">이오발효기</a></li>
+                                <li><a href="./fmt1.html">EO-1000</a></li>
+                                <li><a href="./fmt2.html">EO-1500</a></li>
+                                <li><a href="./fmt3.html">EO-2000</a></li>
+                                <li><a href="./fmt4.html">EO-2600</a></li>
+                                <li><a href="./fmt5.html">EO-3000</a></li>
+                                <li><a href="./fmt6.html">EO-5000</a></li>
+                                <li class="on"><a href="./fmt7.html">EO-6000</a></li>
+                                <li><a href="./fmt8.html">EO-9000</a></li>
+                                <li><a href="./fmt9.html">EO-13500</a></li>
+                                <li><a href="./fmt10.html">EO-16000</a></li>
+                                <li><a href="./fmt11.html">EO-18000</a></li>
+                                <li><a href="./fmt12.html">생균제생산플랜트</a></li>
+                                <li><a href="./fmt13.html">발효사료생산플랜트</a></li>
+                                <li><a href="./fmt14.html">TMF(자가사료)생산플랜트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="fmt_sub_wrap">
+                    <div class="title">
+                        <b>EO-6000</b>
+                    </div>
+                    <div class="product_info">
+                        <div class="info_group">
+                            <p class="group_title">발효기의 특징</p>
+                            <div class="group_row">
+                                <div class="product_img"><img src="../image/eo_6000.jpg" alt="EO-6000" /></div>
+                                <ul>
+                                    <li>스텐레스(sus304)로 제작하여 수명이 반영구적입니다. -관리가 스텐레스 12t~20t / 발효조 스텐레스 3t~8t 사용</li>
+                                    <li>3중구조(발효조+자켓+단열재+외피강판)로 제작하여 열손실을 최소화하였고, 발효물을 균온을 유지함으로 경제적입니다.</li>
+                                    <li>단열이 완벽이 되어있고, 간접가열식인 사용의 저가형 발효기에 비하여 전기가가 반감이하로 절감됩니다.</li>
+                                    <li>간접가열 방식(Water jaket 타입)을 채택하여 온도의 균일성을 유지하여 이물질의 엉김현을 최소화하였습니다.</li>
+                                    <li>관찰구를 이중타입강판으로 제작하여 내용물의 손실이 전혀없고 균일하게 고루물이 거의 남지 않습니다.</li>
+                                    <li>이중도어(하폐타입)로 제작하여 저내부 내용물의 온도를 각각 제어하므로 이상적인 발효조건을 유지한다.</li>
+                                    <li>시중의 발효기는 간조기간이 길어 불완용하였으나, 미생물이 과다하게 사멸하는 단점이 있으나, 폐사의 발효기는 대류현상을 이용하여 휴가방식으로 간조하므로 내용물의 변성이 없고 간조상태가 탁월합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="info_group">
+                            <p class="group_title">발효기의 용량</p>
+                            <div class="list">
+                                <table>
+                                    <thead>
+                                        <th>모델명</th>
+                                        <th>조용적</th>
+                                        <th>풍건조생산</th>
+                                        <th>수분35%</th>
+                                        <th>사용전력</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>EO-1000</td>
+                                            <td>1000L</td>
+                                            <td>300kg</td>
+                                            <td>400kg</td>
+                                            <td>모타 3hp / 히터 3kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-1500</td>
+                                            <td>1500L</td>
+                                            <td>450kg</td>
+                                            <td>600kg</td>
+                                            <td>모타 3hp / 히터 5kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-2000</td>
+                                            <td>2000L</td>
+                                            <td>600kg</td>
+                                            <td>800kg</td>
+                                            <td>모타 3hp / 히터 5kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-2600</td>
+                                            <td>2600L</td>
+                                            <td>800kg</td>
+                                            <td>1050kg</td>
+                                            <td>모타 5hp / 히터 10kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-3000</td>
+                                            <td>3000L</td>
+                                            <td>1000kg</td>
+                                            <td>1400kg</td>
+                                            <td>모타 5hp / 히터 10kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-4000</td>
+                                            <td>4000L</td>
+                                            <td>1300kg</td>
+                                            <td>1800kg</td>
+                                            <td>모타 5hp / 히터 10kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-6000</td>
+                                            <td>6000L</td>
+                                            <td>1800kg</td>
+                                            <td>2500kg</td>
+                                            <td>모타 7.5hp / 히터 10kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-9000</td>
+                                            <td>9000L</td>
+                                            <td>2700kg</td>
+                                            <td>3800kg</td>
+                                            <td>모타 10hp / 히터 15kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-13000</td>
+                                            <td>13000L</td>
+                                            <td>4000kg</td>
+                                            <td>5500kg</td>
+                                            <td>모타 15hp / 히터 20kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-16000</td>
+                                            <td>16000L</td>
+                                            <td>4800kg</td>
+                                            <td>6500kg</td>
+                                            <td>모타 20hp / 히터 30kw</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-18000</td>
+                                            <td>18000L</td>
+                                            <td>5500kg</td>
+                                            <td>7500kg</td>
+                                            <td>모타 30hp / 히터 40kw</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="info_group">
+                            <p class="group_title">발효기의 규격</p>
+                            <div class="list">
+                                <table>
+                                    <thead>
+                                        <th>모델명</th>
+                                        <th>규격</th>
+                                        <th>중량</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>EO-1000</td>
+                                            <td>(L)2000 X (H)1600 X (W)1300</td>
+                                            <td>750kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-1500</td>
+                                            <td>(L)2500 X (H)1700 X (W)1300</td>
+                                            <td>1050kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-2000</td>
+                                            <td>(L)3000 X (H)1700 X (W)1300</td>
+                                            <td>1400kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-2600</td>
+                                            <td>(L)3700 X (H)1700 X (W)1400</td>
+                                            <td>1800kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-3000</td>
+                                            <td>(L)3700 X (H)1800 X (W)1500</td>
+                                            <td>2000kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-4000</td>
+                                            <td>(L)4000 X (H)2000 X (W)1600</td>
+                                            <td>2800kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-5000</td>
+                                            <td>(L)4500 X (H)2000 X (W)1600</td>
+                                            <td>3500kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-6000</td>
+                                            <td>(L)4500 X (H)2100 X (W)1750</td>
+                                            <td>4000kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-9000</td>
+                                            <td>(L)4600 X (H)2200 X (W)2100</td>
+                                            <td>6000kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-13000</td>
+                                            <td>(L)6300 X (H)2300 X (W)2100</td>
+                                            <td>8600kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-16000</td>
+                                            <td>(L)6300 X (H)2500 X (W)2200</td>
+                                            <td>9000kg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>EO-18000</td>
+                                            <td>(L)6300 X (H)2800 X (W)2300</td>
+                                            <td>10500kg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="inner">
+                <div class="footer_wrap">
+                    <h2><img src="../image/ex_f_logo.png" alt="" /></h2>
+                    <ul class="footer_text">
+                        <li>
+                            <div>
+                                <p><span>주소</span><b>경기 광주시 도척면 저수지길 30-78</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrap_1">
+                                <p><span>대표번호</span> <b>031-764-8363</b></p>
+                                <span class="bar"></span>
+                                <p><span>팩스</span><b>031-764-8364</b></p>
+                                <span class="bar"></span>
+                                <p><span>E-mail</span><b>l22hj1999@hanmail.net</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="wrap_1">
+                                <p><span>대표</span><b>이해정</b></p>
+                                <p><span>사업자등록번호</span><b>126-86-63295</b></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="copy">Copyright © 이오기술. All rights reserved.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Top 버튼 -->
+            <button id="topBtn">↑</button>
+        </footer>
+    </body>
+</html>

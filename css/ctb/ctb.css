@@ -1,0 +1,222 @@
+@charset "utf-8";
+.sub_page_top {
+    background: url(../../image/sub_page2_top.png) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.ctb_wrap {
+    display: flex;
+    gap: 16px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.ctb_sub_wrap {
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.ctb_sub_wrap thead tr {
+    height: 40px;
+}
+.img_box {
+    width: 327px;
+    height: 327px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all 0.5s;
+    position: relative;
+}
+.ctb_list li > a:hover .img_box::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: #06060630;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.img_box img {
+    object-fit: cover;
+    transition: scale 1s;
+    width: 100%;
+    height: 100%;
+}
+.ctb_list > ul {
+    gap: 109px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+.ctb_list li > a:hover .img_box {
+    border-radius: 0 70px 0 70px;
+    border: 1px solid #62832b;
+    transition: all 0.5s;
+}
+.ctb_list li > a:hover .img_box img {
+    transition: scale 1s;
+    scale: 1.1;
+}
+.ctb_list li .ctb_info .ctb_ctgry {
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 12px;
+    color: #62832b;
+    background: #fff;
+    border: 1px solid #62832b;
+    border-radius: 30px;
+    margin-top: 12px;
+}
+.wordhover {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.ctb_list li > a:hover .wordhover {
+    color: #124512;
+    font-weight: 500;
+}
+.ctb_sub_wrap .title {
+    border-bottom: 1px solid #3b3b3b;
+}
+.ctb_sub_wrap .title b {
+    color: #3b3b3b;
+    font-size: 32px;
+    line-height: 90px;
+}
+.group_title {
+    /* color: #124512; */
+    color: #62832b;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+.info_group li::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    min-width: 5px;
+    min-height: 5px;
+    height: 5px;
+    background: #fff;
+    border: 1px solid #61832bbb;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.info_group li {
+    word-break: keep-all;
+    display: flex;
+    gap: 12px;
+    line-height: 25px;
+    font-size: 16px;
+    color: rgba(51, 51, 51, 0.7);
+    font-family: "Montserrat", "Pretendard", "Noto Sans KR", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+.info_group {
+    padding-top: 30px;
+}
+.group_row > .product_img {
+    width: 475px;
+    height: 350px;
+    min-width: 475px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.group_row > .product_img > img {
+    width: 100%;
+    object-fit: cover;
+}
+.group_row > ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.group_row {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#zoomImgModal {
+    background: #000000bd;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 10000;
+    display: none;
+}
+.modal_container {
+    background: #fcfcfc;
+    border-radius: 4px;
+    width: 800px;
+    height: auto;
+    min-height: 670px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal_inner_img {
+    width: 800px;
+    padding: 20px;
+}
+.modal_inner_img > img {
+    border-radius: 4px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+}
+.modal_top {
+    padding: 0 20px;
+    min-height: 60px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#modalClose {
+    width: 20px;
+    height: 20px;
+    background: url(../../image/close_icon.png);
+    transition: all 0.5s;
+}
+#modalClose:hover {
+    transform: rotate(180deg);
+    transition: all 0.5s;
+}
+.ctgry_icon {
+    height: 30px;
+    background: #62832b;
+    border-radius: 2px;
+    padding: 0 10px;
+    color: white;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
