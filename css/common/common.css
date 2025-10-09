@@ -356,11 +356,11 @@ td {
 .list tr td:last-child {
     border-right: none;
 }
-.ready_page_wrap{
+.ready_page_wrap {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 160px;
 }

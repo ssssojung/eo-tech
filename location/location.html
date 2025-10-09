@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="/css/common/common.css" />
         <link rel="stylesheet" href="/css/common/header.css" />
         <link rel="stylesheet" href="/css/location/location.css" />
-
+        
+        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=999a9db9c2275bdb9262a9222254920f&autoload=false&libraries=services"></script>
         <script src="/js/common/jquery-3.7.1.min.js"></script>
         <script src="/js/common/common.js"></script>
+        <script src="/js/location/location.js"></script>
     </head>
     <body>
-        <header>
-        </header>
+        <header></header>
 
         <main>
             <div class="sub_page_top">
@@ -34,7 +35,7 @@
                                 <span class="arrow"></span>
                             </button>
                             <ul class="dropdown_menu">
-                                <li><a href="./greeting.html">인사말</a></li>
+                                <li><a href="/faq/faq.html">자주하는 질문</a></li>
                                 <li class="on"><a href="/location/location.html">오시는길</a></li>
                             </ul>
                         </div>
@@ -57,7 +58,8 @@
                             </tr>
                         </table>
                     </div>
-                    <div id="map">지도 API 연결 예정</div>
+                    <!-- <div id="map">지도 API 연결 예정</div> -->
+                    <div id="map" style="width: 100%; height: 500px"></div>
                 </div>
             </div>
         </main>
