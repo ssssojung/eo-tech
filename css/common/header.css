@@ -6,6 +6,7 @@ header {
     left: 0;
     top: 0;
     z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .header_top {
     width: 100%;

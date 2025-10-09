@@ -1,6 +1,6 @@
 @charset "utf-8";
 .sub_page_top {
-    background: url(../../image/sub_page2_top.png) no-repeat center center;
+    background: url(../../image/sub_page_top.png) no-repeat center center;
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -123,10 +123,10 @@
     color: rgba(51, 51, 51, 0.7);
     font-family: "Montserrat", "Pretendard", "Noto Sans KR", "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
 }
-.info_group{
+.info_group {
     padding-top: 30px;
 }
-.group_row > .product_img{
+.group_row > .product_img {
     width: 475px;
     height: 350px;
     min-width: 475px;
@@ -137,17 +137,17 @@
     border-radius: 6px;
     overflow: hidden;
 }
-.group_row > .product_img > img{
+.group_row > .product_img > img {
     width: 100%;
     object-fit: cover;
 }
-.group_row >  ul{
+.group_row > ul {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
-.group_row{
+.group_row {
     display: flex;
     gap: 40px;
     justify-content: flex-start;
