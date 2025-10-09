@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("header").load("../header/header.html");
+    $("header").load("../../header/header.html");
 
     // // gnb 인터렉션
     // $(".gnb_inner > .gnb li").each(function () {
