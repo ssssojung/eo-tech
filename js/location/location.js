@@ -1,32 +1,42 @@
-$(document).ready(function () {
-  // ✅ SDK가 로드된 후에 실행되도록 보장
+window.onload = function () {
   kakao.maps.load(function () {
-    var mapContainer = document.getElementById("map");
-    var mapOption = {
+    const mapContainer = document.getElementById("map");
+    const mapOption = {
       center: new kakao.maps.LatLng(37.4069, 127.2904),
-      level: 4
+      level: 4,
     };
 
-    var map = new kakao.maps.Map(mapContainer, mapOption);
-    var geocoder = new kakao.maps.services.Geocoder();
+    const map = new kakao.maps.Map(mapContainer, mapOption);
+    const geocoder = new kakao.maps.services.Geocoder();
 
-    geocoder.addressSearch("경기 광주시 도척면 저수지길 30-78", function (result, status) {
+    const address = "경기도 광주시 도척면 저수지길 30-78";
+
+    geocoder.addressSearch(address, function (result, status) {
       if (status === kakao.maps.services.Status.OK) {
-        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+        const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
 
-        var marker = new kakao.maps.Marker({
+        // ✅ 기본 마커 생성
+        const marker = new kakao.maps.Marker({
           map: map,
           position: coords
         });
 
-        var infowindow = new kakao.maps.InfoWindow({
-          content: '<div style="width:200px;text-align:center;padding:6px 0;">도척면 저수지길 30-78</div>'
+        // ✅ 기본 인포윈도우 생성
+        const infowindow = new kakao.maps.InfoWindow({
+          content: `<div style="text-align:center;padding:10px 5px;">${address}</div>`
         });
         infowindow.open(map, marker);
+
         map.setCenter(coords);
+
+        // ✅ 마커 클릭 시 카카오맵 새창으로 열기
+        kakao.maps.event.addListener(marker, "click", function () {
+          const kakaoMapUrl = `https://map.kakao.com/link/map/${encodeURIComponent(address)},${result[0].y},${result[0].x}`;
+          window.open(kakaoMapUrl, "_blank");
+        });
       } else {
         alert("주소를 찾을 수 없습니다.");
       }
     });
   });
-});
+};

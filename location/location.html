@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="../css/common/header.css" />
         <link rel="stylesheet" href="../css/location/location.css" />
 
-        <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=999a9db9c2275bdb9262a9222254920f&autoload=false&libraries=services"></script>
+        <!-- <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=999a9db9c2275bdb9262a9222254920f&autoload=false&libraries=services"></script> -->
+
         <script src="../js/common/jquery-3.7.1.min.js"></script>
         <script src="../js/common/common.js"></script>
-        <script src="../js/location/location.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=999a9db9c2275bdb9262a9222254920f&libraries=services"></script>
+        <script defer src="../js/location/location.js"></script>
     </head>
     <body>
         <header></header>
@@ -44,22 +46,21 @@
             </div>
             <div class="inner">
                 <div class="location_wrap">
-                    <div class="list">
-                        <table>
-                            <tr>
-                                <th>주소</th>
-                                <td colspan="3">경기 광주시 도척면 저수지길 30-78</td>
-                            </tr>
-                            <tr>
-                                <th>대표번호</th>
-                                <td>031-764-8363</td>
-                                <th>팩스</th>
-                                <td>031-763-8364</td>
-                            </tr>
-                        </table>
+                    <div id="map"></div>
+                    <div class="box_style">
+                        <div>
+                            <div class="title_wrap"><span class="icon"></span><p>주소</p></div>
+                            <p>경기 광주시 도척면 저수지길 30-78</p>
+                        </div>
+                        <div>
+                            <div class="title_wrap"><span class="icon phone"></span><p>대표번호</p></div>
+                            <p>031-764-8363</p>
+                        </div>
+                        <div>
+                            <div class="title_wrap"><span class="icon fax"></span><p>팩스</p></div>
+                            <p>031-763-8364</p>
+                        </div>
                     </div>
-                    <!-- <div id="map">지도 API 연결 예정</div> -->
-                    <div id="map" style="width: 100%; height: 500px"></div>
                 </div>
             </div>
         </main>
