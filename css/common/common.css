@@ -124,7 +124,7 @@ footer {
 .wrap_1 {
     display: flex;
     gap: 40px;
-
+    white-space: nowrap;
     align-items: center;
 }
 .footer_text p > span {
@@ -363,4 +363,71 @@ td {
     justify-content: center;
     align-items: center;
     margin-top: 160px;
+}
+/* 태블릿 (가로 1024px 이하) */
+@media (max-width: 1024px) {
+    /* 예: 그리드 3 → 2열 */
+    .gnb_wrap {
+        padding: 0 80px;
+    }
+    .inner {
+        padding: 0 80px;
+    }
+    .footer_wrap {
+        justify-content: space-between;
+    }
+    .wrap_1 {
+        justify-content: space-between;
+    }
+    .select_sub_menu_area {
+        padding: 0 80px;
+    }
+}
+
+/* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
+@media (max-width: 768px) {
+    /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
+    .footer_wrap {
+        flex-direction: column;
+    }
+    .sub_page_top .text_area b {
+        font-size: 40px;
+    }
+    .sub_page_top .text_area p {
+        font-size: 16px;
+    }
+}
+
+/* 모바일 (가로 480px 이하) */
+@media (max-width: 480px) {
+    /* 예: 한 줄 레이아웃, 버튼 100% 폭 등 */
+    .wrap_1 {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    .wrap_1 .bar {
+        display: none;
+    }
+    .inner {
+        padding: 0 30px;
+    }
+    th,
+    td {
+        font-size: 12px;
+    }
+    .sub_page_top .text_area p {
+        font-size: 16px;
+    }
+}
+
+/* 초소형 기기 (가로 360px 이하) */
+@media (max-width: 360px) {
+    /* 예: 아주 작은 폰 대응 */
+    .select_sub_menu_area {
+        padding: 0px;
+        justify-content: center;
+    }.inner {
+        padding: 0 16px;
+    }
 }

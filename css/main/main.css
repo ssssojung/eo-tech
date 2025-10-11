@@ -9,6 +9,7 @@ body {
     height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 /* 설치후기 스와이퍼 */
 .swiper_section {
@@ -345,4 +346,76 @@ body {
     display: inline-block;
     background: url(../../image/arrow_right.png);
     background-size: 16px auto;
+}
+/* 태블릿 (가로 1024px 이하) */
+@media (max-width: 1024px) {
+    /* 예: 그리드 3 → 2열 */
+}
+
+/* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
+@media (max-width: 768px) {
+    /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
+    .gallery_title {
+        font-size: 14px;
+    }
+    .solution_section .inner {
+        flex-wrap: wrap;
+        row-gap: 60px;
+    }
+    .solution_item_wrap {
+        width: 45%;
+    }
+    .product_section_img {
+        width: 40%;
+        min-width: 40%;
+        height: auto;
+    }
+    .box_style {
+        margin: 0 auto;
+        transform: translate(-50%, 0px);
+        left: 50%;
+        margin-bottom: 20px;
+        /* width: 478px; */
+        white-space: nowrap;
+    }
+}
+
+/* 모바일 (가로 480px 이하) */
+@media (max-width: 480px) {
+    /* 예: 한 줄 레이아웃, 버튼 100% 폭 등 */
+    .solution_top,
+    .gallery_top,
+    .loaciton_top {
+        font-size: 23px;
+    }
+    .solution_item_wrap b {
+        font-size: 16px;
+    }
+    .solution_item_wrap p {
+        font-size: 14px;
+    }
+    .product_item {
+        flex-direction: column;
+    }
+    .product_section_img {
+        width: 100%;
+    }
+    .position_right {
+        flex-direction: column-reverse;
+    }
+    .title_wrap > p,
+    .box_style > div > p {
+        font-size: 14px;
+    }
+    .product_section .text_area .product_title b {
+        font-size: 20px;
+    }
+    .product_section .text_area .product_info {
+        font-size: 14px;
+    }
+}
+
+/* 초소형 기기 (가로 360px 이하) */
+@media (max-width: 360px) {
+    /* 예: 아주 작은 폰 대응 */
 }

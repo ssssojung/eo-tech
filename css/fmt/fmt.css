@@ -153,3 +153,47 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+/* 태블릿 (가로 1024px 이하) */
+@media (max-width: 1024px) {
+    /* 예: 그리드 3 → 2열 */
+    .group_row {
+        flex-direction: column;
+    }
+    .group_row > .product_img {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+}
+
+/* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
+@media (max-width: 768px) {
+    /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
+    .img_box {
+        width: 100%;
+    }
+    .fmt_list > ul {
+        column-gap: 0px;
+        row-gap: 40px;
+        justify-content: space-between;
+    }
+    .fmt_list li {
+        width: 45%;
+    }
+    .img_box img {
+        width: 100%;
+    }
+}
+
+/* 모바일 (가로 480px 이하) */
+@media (max-width: 480px) {
+    /* 예: 한 줄 레이아웃, 버튼 100% 폭 등 */
+    .info_group li{
+        font-size: 14px;
+    }
+}
+
+/* 초소형 기기 (가로 360px 이하) */
+@media (max-width: 360px) {
+    /* 예: 아주 작은 폰 대응 */
+}
