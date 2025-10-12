@@ -276,6 +276,8 @@ span.home {
 span.arrow {
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background: url(../../image/arrow_icon.png);
 }
 .select_sub_menu_area > span.arrow {
@@ -398,6 +400,16 @@ td {
     body {
         padding-top: 80px;
     }
+    .ready_page_wrap {
+        margin-top: 0;
+        width: 100%;
+    }
+    .ready_page_wrap > img {
+        width: 70%;
+    }
+    .inner {
+        padding: 0 20px;
+    }
 }
 
 /* 모바일 (가로 480px 이하) */
@@ -412,7 +424,7 @@ td {
         display: none;
     }
     .inner {
-        padding: 0 30px;
+        padding: 0 16px;
     }
     th,
     td {
@@ -435,9 +447,6 @@ td {
     .select_sub_menu_area {
         padding: 0px;
         justify-content: center;
-    }
-    .inner {
-        padding: 0 16px;
     }
     .sub_page_top .text_area b {
         font-size: 25px;

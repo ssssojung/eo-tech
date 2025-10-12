@@ -89,6 +89,16 @@
 /* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
 @media (max-width: 768px) {
     /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
+    .box_style {
+        padding: 20px;
+    }
+    .title_wrap > p,
+    .box_style > div > p {
+        font-size: 14px;
+    }
+    .title_wrap{
+            min-width: 75px;
+    }
 }
 
 /* 모바일 (가로 480px 이하) */
@@ -97,6 +107,9 @@
     .title_wrap > p,
     .box_style > div > p {
         font-size: 14px;
+    }
+    .box_style {
+        padding: 10px;
     }
 }
 

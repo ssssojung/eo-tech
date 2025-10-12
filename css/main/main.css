@@ -403,10 +403,7 @@ body {
     .position_right {
         flex-direction: column-reverse;
     }
-    .title_wrap > p,
-    .box_style > div > p {
-        font-size: 14px;
-    }
+  
     .product_section .text_area .product_title b {
         font-size: 20px;
     }
@@ -418,6 +415,11 @@ body {
     }
     .title_wrap {
         min-width: 80px;
+        
+    }
+      .title_wrap > p,
+    .box_style > div > p {
+        font-size: 14px;
     }
 }
 

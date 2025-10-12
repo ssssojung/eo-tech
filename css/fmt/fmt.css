@@ -191,6 +191,9 @@
     .info_group li{
         font-size: 14px;
     }
+        .fmt_list li {
+        width: 100%;
+    }
 }
 
 /* 초소형 기기 (가로 360px 이하) */

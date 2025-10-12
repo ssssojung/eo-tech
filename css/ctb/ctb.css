@@ -244,6 +244,13 @@
 /* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
 @media (max-width: 768px) {
     /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
+    .modal_container {
+        width: 90%;
+    }
+    .modal_container {
+        height: 50%;
+        min-height: 50%;
+    }
 }
 
 /* 모바일 (가로 480px 이하) */
