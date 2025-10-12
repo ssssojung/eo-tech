@@ -137,9 +137,12 @@
                             <span></span>
                         </button>
 
-                        <!-- 모바일 메뉴 -->
+                        <!-- 모바일 메뉴 오버레이 -->
+                        <div class="mobile_overlay"></div>
+
                         <!-- 모바일 메뉴 -->
                         <div class="mobile_menu">
+                            <button class="mobile_close_btn">×</button>
                             <div class="mobile_menu_inner">
                                 <ul class="mobile_gnb">
                                     <!-- 회사소개 -->
@@ -256,9 +259,18 @@
             // gnb 클릭시 focus클래스 추가
             $(".gnb > li").removeClass("focus");
 
-            // 모바일 메뉴 열기/닫기
+            // 모바일 메뉴 열기
             $(".mobile_menu_btn").on("click", function () {
-                $(".mobile_menu").toggleClass("active");
+                $(".mobile_menu").addClass("active");
+                $(".mobile_overlay").addClass("active");
+                $("body").css("overflow", "hidden"); // 스크롤 방지
+            });
+
+            // 모바일 메뉴 닫기
+            $(".mobile_close_btn, .mobile_overlay").on("click", function () {
+                $(".mobile_menu").removeClass("active");
+                $(".mobile_overlay").removeClass("active");
+                $("body").css("overflow", "");
             });
 
             // 아코디언 토글
