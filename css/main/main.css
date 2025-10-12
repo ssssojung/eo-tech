@@ -413,9 +413,38 @@ body {
     .product_section .text_area .product_info {
         font-size: 14px;
     }
+    .box_style {
+        padding: 20px;
+    }
+    .title_wrap {
+        min-width: 80px;
+    }
 }
 
 /* 초소형 기기 (가로 360px 이하) */
 @media (max-width: 360px) {
     /* 예: 아주 작은 폰 대응 */
+    .product_section .text_area .product_title b:after {
+        top: -3px;
+    }
+    .solution_top,
+    .gallery_top,
+    .loaciton_top {
+        font-size: 18px;
+    }
+    .product_section .text_area .product_info {
+        font-size: 13px;
+    }
+    .product_section,
+    .solution_section,
+    .swiper_section .inner {
+        gap: 40px;
+    }
+    .solution_item_wrap {
+        width: 80%;
+    }
+    .solution_section .inner{
+        justify-content: center;
+    }
+  
 }

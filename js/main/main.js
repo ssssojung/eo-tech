@@ -24,6 +24,10 @@ $(document).ready(function () {
                 slidesPerView: 1,
                 spaceBetween: 10,
             },
+            360: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
         },
     });
 });

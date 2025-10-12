@@ -419,6 +419,12 @@ td {
     .sub_page_top .text_area p {
         font-size: 16px;
     }
+    .sub_page_top .text_area b{
+        font-size: 30px;
+    }
+    .sub_page_top{
+        height: 300px !important;
+    }
 }
 
 /* 초소형 기기 (가로 360px 이하) */
@@ -429,5 +435,8 @@ td {
         justify-content: center;
     }.inner {
         padding: 0 16px;
+    }
+    .sub_page_top .text_area b{
+        font-size: 25px;
     }
 }

@@ -99,10 +99,17 @@
     .faq_item_f .arrow_area{
         width: 34px;
         height: 34px;
+        min-width: 34px;
+        min-height: 34px;
+    }
+      .faq_item_f .text{
+        flex-grow: 1;
     }
     .faq_item:has(.faq_item_a) .arrow{
         width: 16px;
         height: 16px;
+        min-width: 16px;
+        min-height: 16px;
         background-size: 16px auto;
     }
 }
