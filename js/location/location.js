@@ -23,7 +23,7 @@ window.onload = function () {
 
         // ✅ 기본 인포윈도우 생성
         const infowindow = new kakao.maps.InfoWindow({
-          content: `<div style="text-align:center;padding:10px 5px;">${address}</div>`
+          content: `<div style="text-align:center;padding:10px 5px; white-space: nowrap;">${address}</div>`
         });
         infowindow.open(map, marker);
 
