@@ -418,22 +418,22 @@ header {
     opacity: 1;
 }
 
-/* ===== 모바일 메뉴 ===== */
+/* ===== 모바일 메뉴 (오른쪽 슬라이드) ===== */
 .mobile_menu {
     display: none;
     position: fixed;
     top: 0;
-    left: -80%;
+    right: -80%; /* 👉 오른쪽 기준으로 숨김 */
     width: 80%;
     height: 100%;
     background: #fff;
-    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; /* 오른쪽에서 슬라이드 인 */
     z-index: 9999;
 }
 .mobile_menu.active {
     display: block;
-    left: 0;
+    right: 0; /* 👉 활성화 시 오른쪽에 붙음 */
 }
 .mobile_menu_inner {
     padding: 80px 20px;
@@ -447,7 +447,7 @@ header {
     right: 15px;
     background: none;
     border: none;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1;
     color: #333;
     cursor: pointer;
@@ -493,10 +493,6 @@ header {
 /* 햄버거 버튼 */
 .mobile_menu_btn {
     display: none;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
     flex-direction: column;
     justify-content: space-between;
     width: 28px;
@@ -504,7 +500,6 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    z-index: 10000;
 }
 .mobile_menu_btn span {
     display: block;
@@ -524,8 +519,6 @@ header {
     }
 }
 
-
-
 /* 태블릿 (가로 1024px 이하) */
 @media (max-width: 1024px) {
     /* 예: 그리드 3 → 2열 */
@@ -534,18 +527,24 @@ header {
 /* 작은 태블릿 / 큰 폰 (가로 768px 이하) */
 @media (max-width: 768px) {
     /* 예: 폰트 사이즈 줄이기, 패딩 조정 등 */
-   .mobile_menu_btn {
+    .gnb_wrap {
+        padding: 0 20px;
+    }
+    .mobile_menu_btn {
         display: flex;
     }
     .gnb {
         display: none !important;
     }
     h1 {
-        height: 50px;
+        height: 40px;
     }
     h1 img {
-        height: 50px;
+        height: 100%;
         object-fit: cover;
+    }
+    .header_gnb{
+        height: 80px;
     }
 }
 
@@ -556,7 +555,7 @@ header {
         height: 30px;
     }
     h1 img {
-        height: 30px;
+        height: 100%;
         object-fit: cover;
     }
     .gnb_wrap {

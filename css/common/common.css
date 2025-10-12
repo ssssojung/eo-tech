@@ -367,9 +367,6 @@ td {
 /* 태블릿 (가로 1024px 이하) */
 @media (max-width: 1024px) {
     /* 예: 그리드 3 → 2열 */
-    .gnb_wrap {
-        padding: 0 80px;
-    }
     .inner {
         padding: 0 80px;
     }
@@ -396,6 +393,9 @@ td {
     .sub_page_top .text_area p {
         font-size: 16px;
     }
+    body {
+        padding-top: 80px;
+    }
 }
 
 /* 모바일 (가로 480px 이하) */
@@ -419,10 +419,10 @@ td {
     .sub_page_top .text_area p {
         font-size: 16px;
     }
-    .sub_page_top .text_area b{
+    .sub_page_top .text_area b {
         font-size: 30px;
     }
-    .sub_page_top{
+    .sub_page_top {
         height: 300px !important;
     }
 }
@@ -433,10 +433,11 @@ td {
     .select_sub_menu_area {
         padding: 0px;
         justify-content: center;
-    }.inner {
+    }
+    .inner {
         padding: 0 16px;
     }
-    .sub_page_top .text_area b{
+    .sub_page_top .text_area b {
         font-size: 25px;
     }
 }
